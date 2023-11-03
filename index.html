@@ -9,10 +9,10 @@
 
 <body>
     <h1>Programming Language Suggester</h1>
-    <P>Please answer the following questions below</P>
+    <P>Please answer the following questions to determine what coding language you are best matched for:</P>
 
     <form id="questionare">
-        <h2>Favorite Time of Day</h2>
+        <h3>Favorite Time of Day</h3>
         <label>
             <input type="radio" name="time" value="Morning">
             Morning
@@ -28,6 +28,7 @@
 
         <h3>Favorite Food</h3>
         <select name="Favorite Food" id="Food">
+            <option>Select</option>
             <option>Pasta</option>
             <option>Sandwich</option>
             <option>Salad</option>
@@ -36,7 +37,36 @@
             <option>Mashed Potatoes</option>
             <option>Sushi</option>
             <option>Fried Chicken</option>
-        </select>
+        </select><br />
+
+        <h3>Favorite Color</h3>
+        <label for="color">
+            <input id="color" type="color">
+        </label><br />
+
+        <h3>Favorite Animal</h3>
+        <label>
+            <input type="radio" name="Animal" value="Lion">
+            Lion
+        </label>
+        <label>
+            <input type="radio" name="Animal" value="Tiger">
+            Tiger
+        </label>
+        <label>
+            <input type="radio" name="Animal" value="Bear">
+            Bear
+        </label><br />
+
+        <h3>Favorite Movie Genre</h3>
+        <select name="Favorite Movie Genre" id="Movie">
+            <option>Select</option>
+            <option>Horror</option>
+            <option>Drama</option>
+            <option>Action</option>
+            <option>Comedy</option>
+            <option>Scify</option>
+        </select><br />
 
         <button type="submit">Enter</button>
     </form>
