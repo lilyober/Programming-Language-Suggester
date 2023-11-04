@@ -19,9 +19,16 @@ window.onload = function () {
         const afternoon = document.getElementById("Afternoon").value;
         const night = document.getElementById("Night").value;
 
-        document.querySelector("span#check").innerText = morning;
-        document.querySelector("span#check2").innerText = afternoon;
-        document.querySelector("span#check3").innerText = night;
+        if (theirChoice === morning) {
+            document.querySelector("span#check").innerText = theirChoice;
+            document.querySelector("span#check").removeAttribute("class");
+        } else if (theirChoice === afternoon) {
+            document.querySelector("span#check2").innerText = theirChoice;
+            document.querySelector("span#check2").removeAttribute("class");
+        } else if (theirChoice === night) {
+            document.querySelector("span#check3").innerText = theirChoice;
+            document.querySelector("span#check3").removeAttribute("class");
+        }
 
         document.querySelector("div#story").removeAttribute("class");
 
