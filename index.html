@@ -11,18 +11,18 @@
     <h1>Programming Language Suggester</h1>
     <P>Please answer the following questions to determine what coding language you are best matched for:</P>
 
-    <form>
+    <form id="questions">
         <h3>Favorite Time of Day</h3>
         <label>
-            <input type="radio" name="time" id="Morning" value="Morning">
+            <input type="radio" name="time" id="Morning" value="Python">
             Morning
         </label><br />
         <label>
-            <input type="radio" name="time" id="Afternoon" value="Afternoon">
+            <input type="radio" name="time" id="Afternoon" value="C#">
             Afternoon
         </label><br />
         <label>
-            <input type="radio" name="time" id="Night" value="Night">
+            <input type="radio" name="time" id="Night" value="JavaScript">
             Night
         </label><br />
 
@@ -69,11 +69,12 @@
         </select><br />
 
         <button type="submit">Enter</button>
+
     </form>
 
     <div id="story" class="hidden">
-        <p>The language you should learn first is <span id="check">Python</span>!</p>
-
+        <p>The language you should learn first is <span id="check"></span><span id="check2"></span><span
+                id="check3"></span>!</p>
     </div>
 
 </body>
