@@ -1,8 +1,8 @@
-// window.onload = function () {
-//     let form = document.querySelector("form");
-    document.addEventListener("submit", function(event) {
+window.onload = function () {
+    let button = document.querySelector("button");
+    button.addEventListener("click", function(event) {
         const Morning = document.getElementById("Morning");
-        Morning.addEventListener("submit", (event) {
+        Morning.addEventListener("submit", (event) => {
             const answer1 = document.getElementById("name").value;
 
         document.getElementById("results").innerText = answer1;
@@ -11,6 +11,7 @@
 
         });
         });
+    };
 
 //         event.preventDefault()
 
