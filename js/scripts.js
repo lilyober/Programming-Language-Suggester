@@ -2,31 +2,42 @@
 
 
 
-// "way to read the value connected"
-function theirChoice(event) {
-    event.preventDefault();
-    const timeSelection = document.querySelector("time").value.
-        window.addEventListener("load", function () {
-            document.getElementById("questions").addEventListener("submit", theirChoice);
-        });
-}
+// "way to read the value connected" aka radio selection connection
+// function theirChoice(event) {
+//     event.preventDefault();
+//     const timeSelection = document.querySelector("time").value.
+//         window.addEventListener("load", function () {
+//             document.getElementById("questions").addEventListener("submit", theirChoice);
+//         });
+// }
+
+
+
 
 // outputs "results" but is not connected to radio button
 window.onload = function () {
+    function theirChoice(event) {
+        event.preventDefault();
+        const timeSelection = document.querySelector("time").value.
+            window.addEventListener("load", function () {
+                document.getElementById("questions").addEventListener("submit", theirChoice);
+            });
+    }
     let form = document.querySelector("form")
     form.addEventListener("submit", (event) => {
         const morning = document.getElementById("Morning").value;
         const afternoon = document.getElementById("Afternoon").value;
         const night = document.getElementById("Night").value;
 
-        if (theirChoice === morning) {
-            document.querySelector("span#check").innerText = theirChoice;
-            document.querySelector("span#check").removeAttribute("class");
-        } else if (theirChoice === afternoon) {
-            document.querySelector("span#check2").innerText = theirChoice;
+        if (timeSelection === morning) {
+            // document.querySelector("span#check").innerText = morning;
+            // document.querySelector("span#check").removeAttribute("class");
+            morning.removeAttribute("class");
+        } else if (timeSelection === afternoon) {
+            document.querySelector("span#check2").innerText = afternoon;
             document.querySelector("span#check2").removeAttribute("class");
-        } else if (theirChoice === night) {
-            document.querySelector("span#check3").innerText = theirChoice;
+        } else if (timeSelection === night) {
+            document.querySelector("span#check3").innerText = night;
             document.querySelector("span#check3").removeAttribute("class");
         }
 
