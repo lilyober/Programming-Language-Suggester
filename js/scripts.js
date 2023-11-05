@@ -19,13 +19,11 @@ window.onload = function () {
                 "Please select again"
             }
         }
+
         results;
 
         document.querySelector("div#result").removeAttribute("class");
         document.querySelector("div#button2").removeAttribute("class");
         event.preventDefault();
-
-
     });
-
 };

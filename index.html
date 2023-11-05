@@ -7,7 +7,7 @@
     <title>Programming Language Suggester</title>
 </head>
 
-<body id="page">
+<body>
     <h1>Programming Language Suggester</h1>
     <P>Please answer the following questions to determine what coding language you are best matched for:</P>
 
@@ -69,17 +69,16 @@
         </select><br />
 
         <button type="submit" id="button1">Enter</button>
-
-        <div id="result" class="hidden">
-            <p>The language you should learn first is <span id="answer"></span>!</p>
-        </div>
-
-
-        <div id="button2" class="hidden">
-            <input type="reset" value="Reset form" onClick="window.location.reload();">
-        </div>
-
     </form>
+
+    <div id="result" class="hidden">
+        <p>The language you should learn first is <span id="answer"></span>!</p>
+    </div>
+
+    <div id="button2" class="hidden">
+        <input type="reset" value="Try again!" onClick="window.location.reload();">
+    </div>
+
 </body>
 
 </html>
