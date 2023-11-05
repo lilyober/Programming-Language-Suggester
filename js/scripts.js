@@ -25,10 +25,6 @@ window.onload = function () {
         document.querySelector("div#button2").removeAttribute("class");
         event.preventDefault();
 
-        document.addEventListener("reset", (event) => {
-            document.getElementById("page").reset();
-        });
-
 
     });
 
