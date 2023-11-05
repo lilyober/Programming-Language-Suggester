@@ -15,7 +15,8 @@ _A webpage that asks a series of basic questions and after clicking "enter" the 
 
 ## Setup/Installation Requirements
 
-* _Clone from GitHub the url and copy it into empty web address_
+* _Clone url from GitHub_
+* _Copy index.html in browser_
 
 ## Known Bugs
 
