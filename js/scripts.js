@@ -23,8 +23,13 @@ window.onload = function () {
 
         document.querySelector("div#result").removeAttribute("class");
         document.querySelector("div#button2").removeAttribute("class");
-        document.getElementById("questions").reset();
         event.preventDefault();
+
+        document.addEventListener("reset", (event) => {
+            document.getElementById("page").reset();
+        });
+
+
     });
 
 };
