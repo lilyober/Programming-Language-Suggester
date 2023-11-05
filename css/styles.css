@@ -3,15 +3,26 @@
 }
 
 body {
-    background: url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg);
     background-size: cover;
-    backface-visibility: 30px;
-    color: antiquewhite;
+    backdrop-filter: blur(5px);
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
+    color: rgb(253, 123, 190);
     text-align: center;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    color: antiquewhite;
+    color: rgb(255, 72, 167);
+}
+
+h3 {
+    margin: 2px;
+    padding-top: 25px;
+}
+
+button {
+    margin: 10px;
+    background-color: rgb(10, 140, 239);
+    font-size: 20px;
 }
