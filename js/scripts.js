@@ -1,67 +1,30 @@
 
-
-
-
-// "way to read the value connected" aka radio selection connection
-// function theirChoice(event) {
-//     event.preventDefault();
-//     const timeSelection = document.querySelector("time").value.
-//         window.addEventListener("load", function () {
-//             document.getElementById("questions").addEventListener("submit", theirChoice);
-//         });
-// }
-
-
-
-
-// outputs "results" but is not connected to radio button
 window.onload = function () {
-    function theirChoice(event) {
-        event.preventDefault();
-        const timeSelection = document.querySelector("time").value.
-            window.addEventListener("load", function () {
-                document.getElementById("questions").addEventListener("submit", theirChoice);
-            });
-    }
-    let form = document.querySelector("form")
+    let form = document.getElementById("questions");
     form.addEventListener("submit", (event) => {
+        const checkedRadio = document.querySelector("input[name='time']:checked").value;
         const morning = document.getElementById("Morning").value;
         const afternoon = document.getElementById("Afternoon").value;
         const night = document.getElementById("Night").value;
 
-        if (timeSelection === morning) {
-            // document.querySelector("span#check").innerText = morning;
-            // document.querySelector("span#check").removeAttribute("class");
-            morning.removeAttribute("class");
-        } else if (timeSelection === afternoon) {
-            document.querySelector("span#check2").innerText = afternoon;
-            document.querySelector("span#check2").removeAttribute("class");
-        } else if (timeSelection === night) {
-            document.querySelector("span#check3").innerText = night;
-            document.querySelector("span#check3").removeAttribute("class");
+        let results = radioResults()
+        function radioResults() {
+            if (checkedRadio === morning) {
+                document.querySelector("span#answer").innerText = morning
+            } else if (checkedRadio === afternoon) {
+                document.querySelector("span#answer").innerText = afternoon
+            } else if (checkedRadio === night) {
+                document.querySelector("span#answer").innerText = night
+            } else {
+                "Please select again"
+            }
         }
+        results;
 
-        document.querySelector("div#story").removeAttribute("class");
-
+        document.querySelector("div#result").removeAttribute("class");
+        document.querySelector("div#button2").removeAttribute("class");
+        document.getElementById("questions").reset();
         event.preventDefault();
     });
+
 };
-
-// BRANCH
-// if (timeSelection === "Morning") {
-//     document.querySelector("span#check").innerText = morning;
-// } else (timeSelection === "Afternoon"){
-//     document.querySelector("span#check2").innerText = afternoon;
-// } else if (timeSelection === "Night") {
-//     document.querySelector("span#check3").innerText = night;
-// };
-
-// if (morning === "Morning") {
-//     document.querySelector("span#check").innerText = morning;
-// } else if (afternoon === "Afternoon") {
-//     document.querySelector("span#check2").innerText = afternoon;
-// } else if (night === "Night") {
-//     document.querySelector("span#check3").innerText = night;
-// } else {
-//     "Error"
-// }
