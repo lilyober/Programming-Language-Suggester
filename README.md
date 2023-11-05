@@ -7,7 +7,7 @@
 
 * _VS Code_
 * _Git Bash_
-*_JavaScript_
+* _JavaScript_
 
 ## Description
 
