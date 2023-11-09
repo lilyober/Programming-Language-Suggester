@@ -15,8 +15,6 @@ window.onload = function () {
                 document.querySelector("span#answer").innerText = afternoon
             } else if (checkedRadio === night) {
                 document.querySelector("span#answer").innerText = night
-            } else {
-                "Please select again"
             }
         }
 
